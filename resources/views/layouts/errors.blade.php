@@ -28,27 +28,17 @@
     <script src="{{ asset('js/respond.min.js') }}"></script>
     <![endif]-->
 </head>
+
 <body>
-<div class="main-wrapper">
-    @include('layouts.navbar')
-    @include('layouts.sidebar')
-    <div class="page-wrapper">
+<div class="main-wrapper error-wrapper">
+    <div class="error-box">
         @yield('content')
-        @include('layouts.notification-box')
     </div>
 </div>
-
-    <div class="sidebar-overlay" data-reff=""></div>
-    <script type="text/javascript" src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/dataTables.bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.slimscroll.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/select2.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/morris/morris.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/raphael/raphael-min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 </body>
+
+
+<!-- Mirrored from dreamguys.co.in/preadmin/dark/error-404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Apr 2018 15:10:17 GMT -->
 </html>
