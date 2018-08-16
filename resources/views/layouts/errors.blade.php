@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('plugins/morris/morris.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}">
     <!--[if lt IE 9]>
     <script src="{{ asset('js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('js/respond.min.js') }}"></script>

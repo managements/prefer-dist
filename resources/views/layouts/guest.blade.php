@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}">
     <!--[if lt IE 9]>
     <script src="{{ asset('js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('js/respond.min.js') }}"></script>

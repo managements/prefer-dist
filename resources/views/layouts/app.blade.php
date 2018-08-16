@@ -15,14 +15,27 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/fullcalendar.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
+    @if(\Illuminate\Support\Facades\App::isLocale('ar'))
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/bootstrap.rtl.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/fullcalendar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/dataTables.bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/bootstrap-datetimepicker.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('plugins/morris/morris.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/style.css') }}">
+    @else
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.rtl.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/fullcalendar.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/dataTables.bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('plugins/morris/morris.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    @endif
     <!--[if lt IE 9]>
     <script src="{{ asset('js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('js/respond.min.js') }}"></script>
@@ -38,17 +51,17 @@
     </div>
 </div>
 
-    <div class="sidebar-overlay" data-reff=""></div>
-    <script type="text/javascript" src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/dataTables.bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.slimscroll.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/select2.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/morris/morris.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('plugins/raphael/raphael-min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+<div class="sidebar-overlay" data-reff=""></div>
+<script type="text/javascript" src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/dataTables.bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.slimscroll.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/select2.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/morris/morris.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/raphael/raphael-min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

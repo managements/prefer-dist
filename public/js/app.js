@@ -35,7 +35,7 @@ $(document).ready(function($) {
 	$.Sidemenu.init();
 
     // Sidebar overlay
-	
+
     var $sidebarOverlay = $(".sidebar-overlay");
     $("#mobile_btn, .task-chat").on("click", function(e) {
         var $target = $($(this).attr("href"));
@@ -101,6 +101,7 @@ $(document).ready(function($) {
             color: '#878787',
             disableFadeOut: true,
             borderRadius: 0,
+			position: 'left',
             size: '4px',
             alwaysVisible: false,
             touchScrollStep: 100
@@ -122,7 +123,7 @@ $(document).ready(function($) {
         $('.slimscroll').slimScroll({
             height: 'auto',
             width: '100%',
-            position: 'right',
+            position: 'left',
             size: "7px",
             color: '#ccc',
             wheelStep: 10,
@@ -724,7 +725,6 @@ $(document).ready(function($) {
             xkey: 'y',
             ykeys: ['a', 'b', 'c', 'd'],
 			resize: true,
-			barColors: ["#0B62A4", "#7A92A3", "#4DA74D", "#5c66bf"],
             labels: ['test1', 'test2', 'test3', 'test4']
         });
         Morris.Donut({
