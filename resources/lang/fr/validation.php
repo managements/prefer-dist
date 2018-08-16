@@ -146,7 +146,20 @@ return [
         'time'                  => 'heure',
         'available'             => 'disponible',
         'size'                  => 'taille',
-        'token'                 => 'token'
+        'token'                 => 'token',
+        'status'                => 'status',
+        'contact'               => 'contact',
+        'licence'               => 'patente',
+        'build'                 => 'immeuble',
+        'floor'                 => 'étage',
+        'apt_nbr'               => 'apt_nbr',
+        'turnover'              => 'chiffre d\'affaire',
+        'speaker'               => 'répondeur',
+        'zip'                   => 'code postal',
+        'range'                 => 'range',
+        'sold'                  => 'solde',
+        'technical'             => 'technique',
+        'limit'                 => 'date limite'
     ],
 
 ];

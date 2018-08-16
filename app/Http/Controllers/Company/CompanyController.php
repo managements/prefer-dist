@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\City;
+namespace App\Http\Controllers\Company;
 
 use App\City;
+use App\Company;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class CityController extends Controller
+class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,8 @@ class CityController extends Controller
      */
     public function index()
     {
-        $cities = City::all();
-        return view('city.index',compact('cities'));
+        $companies = Company::all();
+        return view('company.index',compact('companies'));
     }
 
     /**
@@ -26,7 +27,8 @@ class CityController extends Controller
      */
     public function create()
     {
-        return view('city.create');
+        $cities = City::all();
+        return view('company.create',compact('cities'));
     }
 
     /**
@@ -41,24 +43,36 @@ class CityController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Display the specified resource.
      *
-     * @param  \App\City  $city
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function edit(City $city)
+    public function show(Company $company)
     {
-       return view('city.edit',compact('city'));
+        return view('company.show',compact('company'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Company  $company
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Company $company)
+    {
+        $cities = City::all();
+        return view('company.edit',compact('company','cities'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\City  $city
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, City $city)
+    public function update(Request $request, Company $company)
     {
         //
     }
@@ -66,11 +80,11 @@ class CityController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\City  $city
+     * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function destroy(City $city)
+    public function destroy(Company $company)
     {
-        dd($city);
+        //
     }
 }

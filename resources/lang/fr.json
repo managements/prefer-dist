@@ -1,0 +1,14 @@
+{
+  "action": "actions",
+  "add": "ajouter",
+  "update" : "Modifier",
+  "delete" : "supprimer",
+  "list of cities": "liste des villes",
+  "add city": "ajouter une ville",
+  "company":"compagnie",
+  "list of companies":"liste des compagnies",
+  "your brand please":"votre logo S.V.p",
+  "created_at":"créer le",
+  "updated_at":"Modifier le",
+  "management":"commerce"
+}

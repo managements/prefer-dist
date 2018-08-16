@@ -12,7 +12,7 @@ class CompaniesTableSeeder extends Seeder
     public function run()
     {
         $company = \App\Company::create([
-            'brand'     => 'brands/logo.png',
+            'brand'     => 'logo.png',
             'slug'      => str_slug('LY S.A.R.L'),
             'name'      => 'LY S.A.R.L',
             'licence'   => '123456MLA',
