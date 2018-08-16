@@ -23,6 +23,9 @@
                         {{ Form::label('password',__('validation.attributes.password'),['class'=>'control-label']) }}
                         {{ Form::password('password',['class'=>'form-control floating','required']) }}
                     </div>
+                    @if($errors->has('password'))
+                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
                 </div>
 
                 <div class="form-group text-center">

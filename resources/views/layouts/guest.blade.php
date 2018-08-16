@@ -12,13 +12,19 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}">
+    @if(\Illuminate\Support\Facades\App::isLocale('ar'))
+        <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css_rtl/style.css') }}">
+    @else
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+        @endif
     <!--[if lt IE 9]>
-    <script src="{{ asset('js/html5shiv.min.js') }}"></script>
-    <script src="{{ asset('js/respond.min.js') }}"></script>
-    <![endif]-->
+        <script src="{{ asset('js/html5shiv.min.js') }}"></script>
+        <script src="{{ asset('js/respond.min.js') }}"></script>
+        <![endif]-->
 </head>
 
 <body>
